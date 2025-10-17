@@ -25,50 +25,86 @@ const config: Config = {
       current: "currentColor",
       transparent: "transparent",
       white: "#FFFFFF",
-      body: "#6C6F93",
+      body: "#64748B",
+
+      // Beautiful Light Blue & Blue Color Scheme
+      primary: {
+        DEFAULT: "#3B82F6", // Beautiful Blue
+        50: "#EFF6FF",
+        100: "#DBEAFE",
+        200: "#BFDBFE",
+        300: "#93C5FD",
+        400: "#60A5FA",
+        500: "#3B82F6",
+        600: "#2563EB",
+        700: "#1D4ED8",
+        800: "#1E40AF",
+        900: "#1E3A8A",
+      },
+
+      secondary: {
+        DEFAULT: "#0EA5E9", // Light Blue
+        50: "#F0F9FF",
+        100: "#E0F2FE",
+        200: "#BAE6FD",
+        300: "#7DD3FC",
+        400: "#38BDF8",
+        500: "#0EA5E9",
+        600: "#0284C7",
+        700: "#0369A1",
+        800: "#075985",
+        900: "#0C4A6E",
+      },
+
+      accent: {
+        DEFAULT: "#06B6D4", // Cyan accent
+        light: "#22D3EE",
+        dark: "#0891B2",
+      },
+
       meta: {
-        DEFAULT: "#F7F9FC",
-        2: "#495270",
-        3: "#606882",
-        4: "#8D93A5",
-        5: "#BBBEC9",
+        DEFAULT: "#F0F9FF",
+        2: "#475569",
+        3: "#64748B",
+        4: "#94A3B8",
+        5: "#CBD5E1",
       },
       dark: {
-        DEFAULT: "#1C274C",
-        2: "#495270",
-        3: "#606882",
-        4: "#8D93A5",
-        5: "#BBBEC9",
+        DEFAULT: "#0F172A",
+        2: "#1E293B",
+        3: "#334155",
+        4: "#475569",
+        5: "#64748B",
       },
       gray: {
-        DEFAULT: "#F3F5F6",
-        1: "#F9FAFB",
-        2: "#F3F4F6",
-        3: "#E5E7EB",
-        4: "#D1D5DB",
-        5: "#9CA3AF",
-        6: "#6B7280",
-        7: "#374151",
-        50: "#F9FAFB",
-        100: "#F3F4F6",
-        200: "#E5E7EB",
-        300: "#D1D5DB",
-        400: "#9CA3AF",
-        500: "#6B7280",
-        600: "#4B5563",
-        700: "#374151",
-        800: "#1F2937",
-        900: "#111827",
+        DEFAULT: "#F8FAFC",
+        1: "#F8FAFC",
+        2: "#F1F5F9",
+        3: "#E2E8F0",
+        4: "#CBD5E1",
+        5: "#94A3B8",
+        6: "#64748B",
+        7: "#475569",
+        50: "#F8FAFC",
+        100: "#F1F5F9",
+        200: "#E2E8F0",
+        300: "#CBD5E1",
+        400: "#94A3B8",
+        500: "#64748B",
+        600: "#475569",
+        700: "#334155",
+        800: "#1E293B",
+        900: "#0F172A",
       },
       blue: {
-        DEFAULT: "#573621",
-        dark: "#3D2617",
-        light: "#70492E",
-        "light-2": "#8A5C3B",
-        "light-3": "#A47048",
-        "light-4": "#BE8355",
-        "light-5": "#D89762",
-        500: "#573621",
+        DEFAULT: "#3B82F6",
+        dark: "#1E40AF",
+        light: "#60A5FA",
+        "light-2": "#93C5FD",
+        "light-3": "#BFDBFE",
+        "light-4": "#DBEAFE",
+        "light-5": "#EFF6FF",
+        500: "#3B82F6",
       },
       red: {
         DEFAULT: "#F23030",
@@ -119,6 +155,12 @@ const config: Config = {
     extend: {
       animation: {
         blob: "blob 7s infinite",
+        fadeIn: "fadeIn 0.5s ease-in",
+        fadeInUp: "fadeInUp 0.6s ease-out",
+        slideInRight: "slideInRight 0.5s ease-out",
+        slideInLeft: "slideInLeft 0.5s ease-out",
+        scaleIn: "scaleIn 0.4s ease-out",
+        pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
       keyframes: {
         blob: {
@@ -133,6 +175,50 @@ const config: Config = {
           },
           "100%": {
             transform: "translate(0px, 0px) scale(1)",
+          },
+        },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        fadeInUp: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(30px)"
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)"
+          },
+        },
+        slideInRight: {
+          "0%": {
+            opacity: "0",
+            transform: "translateX(-30px)"
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateX(0)"
+          },
+        },
+        slideInLeft: {
+          "0%": {
+            opacity: "0",
+            transform: "translateX(30px)"
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateX(0)"
+          },
+        },
+        scaleIn: {
+          "0%": {
+            opacity: "0",
+            transform: "scale(0.9)"
+          },
+          "100%": {
+            opacity: "1",
+            transform: "scale(1)"
           },
         },
       },

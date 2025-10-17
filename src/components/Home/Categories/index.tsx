@@ -29,19 +29,20 @@ const Categories = () => {
   }, []);
 
   return (
-    <section className="overflow-hidden pt-17.5">
-      <div className="max-w-[1170px] w-full mx-auto px-4 sm:px-8 xl:px-0 pb-15 border-b border-gray-3">
+    <section className="overflow-hidden pt-20 pb-20 bg-gradient-to-b from-transparent via-gray-50/50 to-transparent">
+      <div className="max-w-[1270px] w-full mx-auto px-6 sm:px-8 xl:px-4">
         <div className="swiper categories-carousel common-carousel">
           {/* <!-- section title --> */}
-          <div className="mb-10 flex items-center justify-between">
+          <div className="mb-12 flex items-center justify-between animate-fadeInUp">
             <div>
-              <span className="flex items-center gap-2.5 font-medium text-dark mb-1.5">
+              <span className="flex items-center gap-3 font-semibold text-blue mb-2 text-sm uppercase tracking-wider">
                 <svg
-                  width="20"
-                  height="20"
+                  width="22"
+                  height="22"
                   viewBox="0 0 20 20"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  className="animate-pulse"
                 >
                   <g clipPath="url(#clip0_834_7356)">
                     <path
@@ -72,13 +73,16 @@ const Categories = () => {
                 </svg>
                 Categories
               </span>
-              <h2 className="font-semibold text-xl xl:text-heading-5 text-dark">
+              <h2 className="font-bold text-3xl xl:text-4xl text-gray-800 bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text">
                 Browse by Category
               </h2>
             </div>
 
             <div className="flex items-center gap-3">
-              <button onClick={handlePrev} className="swiper-button-prev">
+              <button
+                onClick={handlePrev}
+                className="swiper-button-prev !w-12 !h-12 !rounded-2xl !bg-white/90 backdrop-blur-sm border border-gray-200/60 !shadow-lg hover:!shadow-xl hover:!bg-white hover:scale-110 !transition-all !duration-300"
+              >
                 <svg
                   className="fill-current"
                   width="24"
@@ -96,7 +100,10 @@ const Categories = () => {
                 </svg>
               </button>
 
-              <button onClick={handleNext} className="swiper-button-next">
+              <button
+                onClick={handleNext}
+                className="swiper-button-next !w-12 !h-12 !rounded-2xl !bg-white/90 backdrop-blur-sm border border-gray-200/60 !shadow-lg hover:!shadow-xl hover:!bg-white hover:scale-110 !transition-all !duration-300"
+              >
                 <svg
                   className="fill-current"
                   width="24"

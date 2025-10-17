@@ -133,7 +133,7 @@ export default function ForgotPassword() {
         </div>
 
         <p className="text-center text-sm mt-6" style={{ color: "#94A3B8" }}>
-          © {new Date().getFullYear()} Pallets Ecommerce. All rights reserved.
+          © {new Date().getFullYear()} Shopverse Ecommerce. All rights reserved.
         </p>
       </div>
     </div>

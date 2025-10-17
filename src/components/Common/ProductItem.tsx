@@ -159,11 +159,20 @@ const ProductItem = ({ item }: { item: Product }) => {
   };
 
   return (
-    <div className="group">
-      <div className="relative overflow-hidden flex items-center justify-center rounded-lg bg-[#F6F7FB] min-h-[270px] mb-4">
-        <Image src={item.imgs.previews[0]} alt="" width={250} height={250} />
+    <div className="group animate-fadeInUp">
+      <div className="relative overflow-hidden flex items-center justify-center rounded-3xl bg-gradient-to-br from-gray-50 to-gray-100/50 min-h-[300px] mb-5 border border-gray-200/50 shadow-sm hover:shadow-2xl transition-all duration-500 group-hover:scale-[1.02]">
+        <Image
+          src={item.imgs.previews[0]}
+          alt={item.title}
+          width={250}
+          height={250}
+          className="group-hover:scale-110 transition-transform duration-700 drop-shadow-lg"
+        />
 
-        <div className="absolute left-0 bottom-0 translate-y-full w-full flex items-center justify-center gap-2.5 pb-5 ease-linear duration-200 group-hover:translate-y-0">
+        {/* Gradient overlay on hover */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
+
+        <div className="absolute left-0 bottom-0 translate-y-full w-full flex items-center justify-center gap-3 pb-6 ease-out duration-300 group-hover:translate-y-0">
           <button
             onClick={() => {
               openModal();
@@ -171,7 +180,7 @@ const ProductItem = ({ item }: { item: Product }) => {
             }}
             id="newOne"
             aria-label="button for quick view"
-            className="flex items-center justify-center w-10 h-10 rounded-full shadow-1 ease-out duration-200 text-dark bg-white hover:text-blue"
+            className="flex items-center justify-center w-12 h-12 rounded-2xl shadow-lg ease-out duration-300 text-gray-700 bg-white/95 backdrop-blur-sm hover:text-blue hover:scale-110 hover:bg-white"
           >
             <svg
               className="fill-current"
@@ -204,7 +213,7 @@ const ProductItem = ({ item }: { item: Product }) => {
                 handleAddToCart();
               }
             }}
-            className="inline-flex items-center justify-center font-medium text-custom-sm py-2.5 px-6 rounded-full bg-blue text-white ease-out duration-200 hover:bg-blue-dark min-w-[120px]"
+            className="inline-flex items-center justify-center font-semibold text-sm py-3 px-8 rounded-2xl bg-gradient-to-r from-blue to-blue-dark text-white ease-out duration-300 hover:shadow-xl hover:scale-105 min-w-[140px]"
           >
             {isInCart ? t('Checkout') : 'Add to Cart'}
           </button>
@@ -213,7 +222,7 @@ const ProductItem = ({ item }: { item: Product }) => {
             onClick={() => handleItemToWishList()}
             aria-label="button for favorite select"
             id="favOne"
-            className="flex items-center justify-center w-10 h-10 rounded-full shadow-1 ease-out duration-200 bg-white hover:text-red-500"
+            className="flex items-center justify-center w-12 h-12 rounded-2xl shadow-lg ease-out duration-300 bg-white/95 backdrop-blur-sm hover:scale-110 hover:bg-white"
           >
             <svg
               width="18"
@@ -233,53 +242,40 @@ const ProductItem = ({ item }: { item: Product }) => {
         </div>
       </div>
 
-      <div className="flex items-center gap-2.5 mb-2">
+      <div className="flex items-center gap-3 mb-3">
         <div className="flex items-center gap-1">
-          <Image
-            src="/images/icons/icon-star.svg"
-            alt="star icon"
-            width={14}
-            height={14}
-          />
-          <Image
-            src="/images/icons/icon-star.svg"
-            alt="star icon"
-            width={14}
-            height={14}
-          />
-          <Image
-            src="/images/icons/icon-star.svg"
-            alt="star icon"
-            width={14}
-            height={14}
-          />
-          <Image
-            src="/images/icons/icon-star.svg"
-            alt="star icon"
-            width={14}
-            height={14}
-          />
-          <Image
-            src="/images/icons/icon-star.svg"
-            alt="star icon"
-            width={14}
-            height={14}
-          />
+          {[...Array(5)].map((_, i) => (
+            <svg
+              key={i}
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="#FCD34D"
+              className="drop-shadow-sm"
+            >
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+          ))}
         </div>
 
-        <p className="text-custom-sm">({item.reviews})</p>
+        <p className="text-sm text-gray-500 font-medium">({item.reviews})</p>
       </div>
 
       <h3
-        className="font-medium text-dark ease-out duration-200 hover:text-blue mb-1.5"
+        className="font-semibold text-gray-800 text-lg ease-out duration-300 hover:text-blue mb-3 line-clamp-2 cursor-pointer"
         onClick={() => handleProductDetails()}
       >
-        <Link href="/shop-details"> {item.title} </Link>
+        <Link href="/shop-details" className="hover:underline"> {item.title} </Link>
       </h3>
 
-      <span className="flex items-center gap-2 font-medium text-lg">
-        <span className="text-dark">${item.discountedPrice}</span>
-        <span className="text-dark-4 line-through">${item.price}</span>
+      <span className="flex items-center gap-3 font-bold text-xl">
+        <span className="text-blue">${item.discountedPrice}</span>
+        <span className="text-gray-400 line-through text-base">${item.price}</span>
+        {item.price > item.discountedPrice && (
+          <span className="text-xs font-semibold bg-gradient-to-r from-red-500 to-red-600 text-white px-2.5 py-1 rounded-full">
+            {Math.round(((item.price - item.discountedPrice) / item.price) * 100)}% OFF
+          </span>
+        )}
       </span>
     </div>
   );

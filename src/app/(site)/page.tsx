@@ -2,7 +2,7 @@ import Home from "@/components/Home";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pallets",
+  title: "Shopverse",
   description: "Home Page",
   // other metadata
 };

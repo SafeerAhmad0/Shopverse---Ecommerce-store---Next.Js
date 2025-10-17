@@ -24,7 +24,7 @@ export async function POST(request: NextRequest) {
       cloudinary.uploader
         .upload_stream(
           {
-            folder: 'pallets-ecommerce',
+            folder: 'Shopverse-ecommerce',
             resource_type: 'auto', // Supsasaports images and videos
           },
           (error, result) => {

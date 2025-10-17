@@ -37,7 +37,7 @@ Go to: **Supabase Dashboard → Authentication → Email Templates**
 #### Reset Password Template:
 ```html
 <h2>Reset Your Password</h2>
-<p>Click the link below to reset your password for Pallets Ecommerce Admin:</p>
+<p>Click the link below to reset your password for Shopverse Ecommerce Admin:</p>
 <p><a href="{{ .ConfirmationURL }}">Reset Password</a></p>
 <p>If you didn't request this, please ignore this email.</p>
 <p>This link expires in 1 hour.</p>
@@ -89,7 +89,7 @@ SMTP Port: 587
 SMTP User: apikey
 SMTP Password: YOUR_SENDGRID_API_KEY
 Sender Email: noreply@yourdomain.com
-Sender Name: Pallets Ecommerce
+Sender Name: Shopverse Ecommerce
 ```
 
 #### Example: Gmail (for testing only)
@@ -99,7 +99,7 @@ SMTP Port: 587
 SMTP User: your-email@gmail.com
 SMTP Password: your-app-specific-password
 Sender Email: your-email@gmail.com
-Sender Name: Pallets Ecommerce
+Sender Name: Shopverse Ecommerce
 ```
 
 **Note:** For Gmail, you need to create an [App-Specific Password](https://support.google.com/accounts/answer/185833).

@@ -529,7 +529,7 @@ const shopData: Product[] = [
           {
     title: "Asus RT Dual Band Router",
     reviews: 15,
-    category: "pallets",
+    category: "Shopverse",
     price: 59.0,
     discountedPrice: 29.0,
     id: 27,
@@ -537,21 +537,21 @@ const shopData: Product[] = [
     woodTypes: ["beech pine","bohemin", "aro"],
     imgs: {
       thumbnails: [
-        "/images/products/pallets/pallet/p1.jpg",
-        "/images/products/pallets/pallet/p2.jpg",
-        "/images/products/pallets/pallet/p3.jpg",
+        "/images/products/Shopverse/pallet/p1.jpg",
+        "/images/products/Shopverse/pallet/p2.jpg",
+        "/images/products/Shopverse/pallet/p3.jpg",
       ],
       previews: [
-        "/images/products/pallets/pallet/p1.jpg",
-        "/images/products/pallets/pallet/p2.jpg",
-        "/images/products/pallets/pallet/p3.jpg",
+        "/images/products/Shopverse/pallet/p1.jpg",
+        "/images/products/Shopverse/pallet/p2.jpg",
+        "/images/products/Shopverse/pallet/p3.jpg",
       ],
     },
   },
             {
     title: "Asus RT Dual Band Router",
     reviews: 15,
-    category: "pallets",
+    category: "Shopverse",
     price: 59.0,
     discountedPrice: 29.0,
     id: 28,
@@ -559,19 +559,19 @@ const shopData: Product[] = [
     woodTypes: ["beech pine","bohemin", "aro"],
     imgs: {
       thumbnails: [
-        "/images/products/pallets/pallet2/p1.jpg",
-        "/images/products/pallets/pallet2/p2.jpg",
+        "/images/products/Shopverse/pallet2/p1.jpg",
+        "/images/products/Shopverse/pallet2/p2.jpg",
       ],
       previews: [
-        "/images/products/pallets/pallet2/p1.jpg",
-        "/images/products/pallets/pallet2/p2.jpg",
+        "/images/products/Shopverse/pallet2/p1.jpg",
+        "/images/products/Shopverse/pallet2/p2.jpg",
       ],
     },
   },
             {
     title: "Asus RT Dual Band Router",
     reviews: 15,
-    category: "pallets",
+    category: "Shopverse",
     price: 59.0,
     discountedPrice: 29.0,
     id: 29,
@@ -579,17 +579,17 @@ const shopData: Product[] = [
     woodTypes: ["beech pine","bohemin", "aro"],
     imgs: {
       thumbnails: [
-        "/images/products/pallets/pallet3.jpg",
+        "/images/products/Shopverse/pallet3.jpg",
       ],
       previews: [
-        "/images/products/pallets/pallet3.jpg",
+        "/images/products/Shopverse/pallet3.jpg",
       ],
     },
   },
               {
     title: "Asus RT Dual Band Router",
     reviews: 15,
-    category: "pallets",
+    category: "Shopverse",
     price: 59.0,
     discountedPrice: 29.0,
     id: 30,
@@ -597,17 +597,17 @@ const shopData: Product[] = [
     woodTypes: ["beech pine","bohemin", "aro"],
     imgs: {
       thumbnails: [
-        "/images/products/pallets/pallet4.jpg",
+        "/images/products/Shopverse/pallet4.jpg",
       ],
       previews: [
-        "/images/products/pallets/pallet4.jpg",
+        "/images/products/Shopverse/pallet4.jpg",
       ],
     },
   },
   {
     title: "Asus RT Dual Band Router",
     reviews: 15,
-    category: "pallets",
+    category: "Shopverse",
     price: 59.0,
     discountedPrice: 29.0,
     id: 31,
@@ -615,10 +615,10 @@ const shopData: Product[] = [
     woodTypes: ["beech pine","bohemin", "aro"],
     imgs: {
       thumbnails: [
-        "/images/products/pallets/pallet5.jpg",
+        "/images/products/Shopverse/pallet5.jpg",
       ],
       previews: [
-        "/images/products/pallets/pallet5.jpg",
+        "/images/products/Shopverse/pallet5.jpg",
       ],
     },
   },

@@ -5,18 +5,18 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="overflow-hidden">
-      <div className="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0">
+    <footer className="overflow-hidden bg-gradient-to-b from-gray-50 to-white border-t border-gray-200/50">
+      <div className="max-w-[1270px] mx-auto px-6 sm:px-8 xl:px-4">
         {/* <!-- footer menu start --> */}
-        <div className="flex flex-wrap xl:flex-nowrap gap-10 xl:gap-19 xl:justify-between pt-17.5 xl:pt-22.5 pb-10 xl:pb-15">
-          <div className="max-w-[330px] w-full">
-            <h2 className="mb-7.5 text-custom-1 font-medium text-dark">
+        <div className="flex flex-wrap xl:flex-nowrap gap-12 xl:gap-20 xl:justify-between pt-20 xl:pt-24 pb-12 xl:pb-16">
+          <div className="max-w-[360px] w-full">
+            <h2 className="mb-8 text-2xl font-bold text-gray-800">
               Help & Support
             </h2>
 
-            <ul className="flex flex-col gap-3">
-              <li className="flex gap-4.5">
-                <span className="flex-shrink-0">
+            <ul className="flex flex-col gap-5">
+              <li className="flex gap-5 items-start group">
+                <span className="flex-shrink-0 text-blue group-hover:scale-110 transition-transform duration-300">
                   <svg
                     width="24"
                     height="24"
@@ -32,11 +32,13 @@ const Footer = () => {
                     />
                   </svg>
                 </span>
-                Street 296, Maadi, Cairo, Egypt
+                <span className="text-gray-700 group-hover:text-gray-900 transition-colors duration-300">
+                  Street 296, Maadi, Cairo, Shopverse
+                </span>
               </li>
 
-              <li>
-                <a href="#" className="flex items-center gap-4.5">
+              <li className="group">
+                <a href="#" className="flex items-start gap-5 hover:text-blue transition-colors duration-300">
                   <svg
                     width="24"
                     height="24"
@@ -81,7 +83,7 @@ const Footer = () => {
                       fill="#000000"
                     />
                   </svg>
-                  support@PalletsEgypt.com
+                  support@Shopverse.com
                 </a>
               </li>
             </ul>
@@ -89,7 +91,7 @@ const Footer = () => {
             {/* <!-- Social Links start --> */}
             <div className="flex items-center gap-4 mt-7.5">
               <a
-                href="https://web.facebook.com/PalletsEgypt/?_rdc=1&_rdr#"
+                href="https://web.facebook.com/Shopverse/?_rdc=1&_rdr#"
                 aria-label="Facebook Social Link"
                 className="flex ease-out duration-200 hover:text-blue"
                 target="_blank" // tells the browser to open the link in a new tab (or window).
@@ -116,7 +118,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://www.instagram.com/palletsegypt/?hl=en"
+                href="https://www.instagram.com/Shopverse/?hl=en"
                 aria-label="Instagram Social Link"
                 className="flex ease-out duration-200 hover:text-blue"
                 target="_blank" // tells the browser to open the link in a new tab (or window).
@@ -238,15 +240,15 @@ const Footer = () => {
       </div>
 
       {/* <!-- footer bottom start --> */}
-      <div className="py-5 xl:py-7.5 bg-gray-1">
-        <div className="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0">
-          <div className="flex gap-5 flex-wrap items-center justify-between">
-            <p className="text-dark font-medium">
-              &copy; {year}. All rights reserved by GhzalLabs.
+      <div className="py-8 xl:py-10 bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100 border-t border-gray-200/50">
+        <div className="max-w-[1270px] mx-auto px-6 sm:px-8 xl:px-4">
+          <div className="flex gap-6 flex-wrap items-center justify-between">
+            <p className="text-gray-700 font-semibold">
+              &copy; {year}. All rights reserved by <span className="text-blue">GhzalLabs</span>.
             </p>
 
-            <div className="flex flex-wrap items-center gap-4">
-              <p className="font-medium">We Accept:</p>
+            <div className="flex flex-wrap items-center gap-5">
+              <p className="font-semibold text-gray-800">We Accept:</p>
 
               <div className="flex flex-wrap items-center gap-6">
                 <a href="#" aria-label="payment system with visa card">

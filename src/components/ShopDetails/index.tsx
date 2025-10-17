@@ -90,11 +90,11 @@ const ShopDetails: React.FC = () => {
         return;
       }
 
-      // 2) Fetch from database - run both queries in parallel for speed
+      // 2) Fetch from database - run both queries in Shopverse for speed
       try {
         console.log("Fetching product with ID:", idStr);
 
-        // Run both queries in parallel (faster than sequential)
+        // Run both queries in Shopverse (faster than sequential)
         const [productResult, categoriesResult] = await Promise.all([
           supabase
             .from("products")
@@ -120,7 +120,7 @@ const ShopDetails: React.FC = () => {
         const productData = productResult.data;
 
         if (productData && mounted) {
-          // Get category name from parallel query result
+          // Get category name from Shopverse query result
           let categoryName = "Uncategorized";
           if (productData.category_id && categoriesResult.data) {
             const category = categoriesResult.data.find(cat => cat.id === productData.category_id);

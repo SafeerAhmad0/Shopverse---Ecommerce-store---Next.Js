@@ -15,7 +15,7 @@ const data = [
     img: "/images/categories/categories-03.png",
   },
   {
-    title: "Pallets",
+    title: "Shopverse",
     id: 3,
     img: "/images/categories/categories-04.png",
   },

@@ -5,19 +5,34 @@
 @layer base {
   html {
     @apply scroll-smooth;
+    scroll-behavior: smooth;
+  }
+
+  * {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   body {
-    @apply font-euclid-circular-a font-normal text-base text-dark-3 relative z-1;
+    @apply font-euclid-circular-a font-normal text-base text-gray-700 relative z-1;
+    background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 25%, #BFDBFE 50%, #E0F2FE 75%, #F0F9FF 100%);
+    background-attachment: fixed;
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+  }
+
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
 
   /* Dark mode styles */
   .dark {
-    @apply bg-gray-900;
+    @apply bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900;
   }
 
   .dark body {
-    @apply bg-gray-900 text-gray-100;
+    @apply bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100;
   }
 
   .dark .bg-white {
