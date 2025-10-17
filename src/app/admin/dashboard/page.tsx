@@ -13,6 +13,8 @@ import CategoryForm from "@/components/Admin/CategoryForm"
 import ProductForm from "@/components/Admin/ProductForm"
 import TwoFactorManagement from "@/components/Admin/TwoFactorManagement"
 
+export const dynamic = 'force-dynamic'
+
 interface User {
   id: string
   name: string
