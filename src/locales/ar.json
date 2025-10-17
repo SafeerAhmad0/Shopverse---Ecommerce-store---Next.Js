@@ -1,0 +1,94 @@
+{
+  "common": {
+    "home": "الرئيسية",
+    "shop": "المتجر",
+    "about": "من نحن",
+    "contact": "اتصل بنا",
+    "cart": "السلة",
+    "wishlist": "المفضلة",
+    "account": "الحساب",
+    "signIn": "تسجيل الدخول",
+    "signUp": "إنشاء حساب",
+    "register": "التسجيل",
+    "logout": "تسجيل الخروج",
+    "search": "ابحث عن المنتجات...",
+    "allCategories": "كل الفئات"
+  },
+  "header": {
+    "support": "دعم 24/7",
+    "phone": "(+20) 114-042-2240",
+    "signInRegister": "تسجيل الدخول / التسجيل"
+  },
+  "product": {
+    "addToCart": "أضف إلى السلة",
+    "checkout": "الدفع",
+    "addToWishlist": "أضف إلى المفضلة",
+    "viewDetails": "عرض التفاصيل",
+    "outOfStock": "غير متوفر",
+    "inStock": "متوفر",
+    "price": "السعر",
+    "color": "اللون",
+    "woodType": "نوع الخشب",
+    "quantity": "الكمية",
+    "purchaseNow": "اشتر الآن",
+    "reviews": "التقييمات",
+    "rating": "التقييم",
+    "freeDelivery": "التوصيل المجاني متاح",
+    "saleCode": "تخفيض 30٪ استخدم الرمز: PROMO30",
+    "noProductsAvailable": "لا توجد منتجات متاحة"
+  },
+  "shop": {
+    "exploreAllProducts": "استكشف جميع المنتجات",
+    "showingResults": "عرض",
+    "of": "من",
+    "products": "منتجات",
+    "sortBy": "ترتيب حسب",
+    "filterBy": "تصفية حسب",
+    "priceRange": "نطاق السعر",
+    "categories": "الفئة",
+    "clearAll": "مسح الكل"
+  },
+  "footer": {
+    "aboutUs": "من نحن",
+    "contactUs": "اتصل بنا",
+    "privacyPolicy": "سياسة الخصوصية",
+    "termsConditions": "الشروط والأحكام",
+    "allRightsReserved": "جميع الحقوق محفوظة"
+  },
+  "reviews": {
+    "customerReviews": "تقييمات العملاء",
+    "writeReview": "اكتب تقييماً",
+    "yourReview": "تقييمك",
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "reviewTitle": "عنوان التقييم",
+    "comment": "التعليق",
+    "submit": "إرسال التقييم",
+    "cancel": "إلغاء",
+    "verifiedPurchase": "عملية شراء موثقة",
+    "outOf": "من",
+    "noReviews": "لا توجد تقييمات بعد. كن أول من يقيم هذا المنتج!"
+  },
+  "flashSales": {
+    "title": "عروض سريعة",
+    "subtitle": "عروض لفترة محدودة",
+    "endsIn": "ينتهي في",
+    "days": "أيام",
+    "hours": "ساعات",
+    "minutes": "دقائق",
+    "seconds": "ثواني",
+    "stock": "المخزون"
+  },
+  "specialOrders": {
+    "title": "طلبات خاصة",
+    "subtitle": "حلول أثاث مخصصة",
+    "description": "تحتاج شيئاً فريداً؟ يمكننا إنشاء قطع أثاث مخصصة وفقاً لمواصفاتك.",
+    "requestQuote": "اطلب عرض سعر",
+    "yourName": "اسمك",
+    "yourEmail": "بريدك الإلكتروني",
+    "phone": "رقم الهاتف",
+    "projectDetails": "تفاصيل المشروع",
+    "submit": "إرسال الطلب",
+    "thankYou": "شكراً! سنتواصل معك قريباً."
+  }
+}

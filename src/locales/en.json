@@ -1,0 +1,94 @@
+{
+  "common": {
+    "home": "Home",
+    "shop": "Shop",
+    "about": "About",
+    "contact": "Contact",
+    "cart": "Cart",
+    "wishlist": "Wishlist",
+    "account": "Account",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "register": "Register",
+    "logout": "Logout",
+    "search": "Search products...",
+    "allCategories": "All Categories"
+  },
+  "header": {
+    "support": "24/7 SUPPORT",
+    "phone": "(+20) 114-042-2240",
+    "signInRegister": "Sign In / Register"
+  },
+  "product": {
+    "addToCart": "Add to Cart",
+    "checkout": "Checkout",
+    "addToWishlist": "Add to Wishlist",
+    "viewDetails": "View Details",
+    "outOfStock": "Out of Stock",
+    "inStock": "In Stock",
+    "price": "Price",
+    "color": "Color",
+    "woodType": "Wood Type",
+    "quantity": "Quantity",
+    "purchaseNow": "Purchase Now",
+    "reviews": "Reviews",
+    "rating": "Rating",
+    "freeDelivery": "Free delivery available",
+    "saleCode": "Sales 30% Off Use Code: PROMO30",
+    "noProductsAvailable": "No products available"
+  },
+  "shop": {
+    "exploreAllProducts": "Explore All Products",
+    "showingResults": "Showing",
+    "of": "of",
+    "products": "products",
+    "sortBy": "Sort By",
+    "filterBy": "Filter By",
+    "priceRange": "Price Range",
+    "categories": "Category",
+    "clearAll": "Clear All"
+  },
+  "footer": {
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us",
+    "privacyPolicy": "Privacy Policy",
+    "termsConditions": "Terms & Conditions",
+    "allRightsReserved": "All Rights Reserved"
+  },
+  "reviews": {
+    "customerReviews": "Customer Reviews",
+    "writeReview": "Write a Review",
+    "yourReview": "Your Review",
+    "name": "Name",
+    "email": "Email",
+    "reviewTitle": "Review Title",
+    "comment": "Comment",
+    "submit": "Submit Review",
+    "cancel": "Cancel",
+    "verifiedPurchase": "Verified Purchase",
+    "outOf": "out of",
+    "noReviews": "No reviews yet. Be the first to review this product!"
+  },
+  "flashSales": {
+    "title": "Flash Sales",
+    "subtitle": "Limited Time Offers",
+    "endsIn": "Ends in",
+    "days": "Days",
+    "hours": "Hrs",
+    "minutes": "Min",
+    "seconds": "Sec",
+    "stock": "Stock"
+  },
+  "specialOrders": {
+    "title": "Special Orders",
+    "subtitle": "Custom Furniture Solutions",
+    "description": "Need something unique? We can create custom furniture pieces tailored to your specifications.",
+    "requestQuote": "Request a Quote",
+    "yourName": "Your Name",
+    "yourEmail": "Your Email",
+    "phone": "Phone Number",
+    "projectDetails": "Project Details",
+    "submit": "Submit Request",
+    "thankYou": "Thank you! We'll get back to you soon."
+  }
+}

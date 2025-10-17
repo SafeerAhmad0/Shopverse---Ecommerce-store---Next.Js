@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run dev:*)",
+      "Bash(curl:*)",
+      "Bash(ls:*)",
+      "Bash(npm install:*)",
+      "Read(//c/Users/safee/Documents/Projects/Product-Images-Next.js-Enhancements/product-images-next.js-enhancements/src/app/main/**)",
+      "Bash(npm run build:*)",
+      "WebSearch",
+      "WebFetch(domain:supabase.com)",
+      "Bash(supabase --version:*)",
+      "Bash(pg_dump:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
